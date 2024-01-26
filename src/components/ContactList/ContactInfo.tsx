@@ -47,7 +47,7 @@ const ContactInfo: React.FC<ContactInfoProps> = ({
       text: "sim",
       onPress: async () => {
         try {
-          const resp = await fetch(`http://192.168.43.220:8080/crudIXC/api/contatos/deletar/${id}`, {
+          const resp = await fetch(`http://192.168.112.209:8080/crudIXC/api/contatos/deletar/${id}`, {
             method: "DELETE",
             headers: {
               Authorization: "Bearer 50be8559-160e-4dc6-ae8c-5bc2493a7b5e"

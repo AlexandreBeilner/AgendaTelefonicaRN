@@ -37,7 +37,7 @@ const ContactEdit: React.FC<EditProps> = ({
     setDisable(true);
     if (editName && editNum) {
       try {
-        const resp = await fetch(`http://192.168.43.220:8080/crudIXC/api/contatos/atualizar/${id}`, {
+        const resp = await fetch(`http://192.168.112.209:8080/crudIXC/api/contatos/atualizar/${id}`, {
           method: "PUT",
           headers: {
             "Content-Type": "application/json",
@@ -74,7 +74,6 @@ const ContactEdit: React.FC<EditProps> = ({
       setEditNum(phoneMask(cellNum));
     }
   };
-
 
   return (
     <EditContainer key={cellNum + id}>

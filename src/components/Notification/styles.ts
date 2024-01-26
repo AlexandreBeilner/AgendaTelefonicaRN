@@ -14,11 +14,13 @@ export const NotificationContainer = styled(Animated.View)<{backgound: string}>`
   justify-content: center;
   z-index: 99;
   border-radius: 10px;
+  padding: 15px;
 `;
 
 export const NotifyMessage = styled.Text` 
   color: white;
   font-size: 25px;
+  text-align: center;
 `;
 
 export const CloseNotification = styled.TouchableOpacity` 

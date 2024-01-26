@@ -66,7 +66,7 @@ const Notification: React.FC<NotifyProps> = ({message, type, visibility, setVisi
           <CloseNotification onPress={() => {setVisibility(false)}}>
             <Icon name={"times"} size={30} color={"white"} />
           </CloseNotification>
-          <NotifyMessage>{message}</NotifyMessage>
+          <NotifyMessage numberOfLines={2}>{message}</NotifyMessage>
         </NotificationContainer>
       </GestureDetector>}
     </>

@@ -35,7 +35,7 @@ const CreateContactForm: React.FC = () => {
   const saveInDb = async () => {
     if (validateCellNum() && validateName()) {
       try {
-        const resp = await fetch("http://192.168.43.220:8080/crudIXC/api/contatos/cadastrar", {
+        const resp = await fetch("http://192.168.112.209:8080/crudIXC/api/contatos/cadastrar", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",

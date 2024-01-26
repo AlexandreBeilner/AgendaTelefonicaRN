@@ -1,8 +1,9 @@
 import styled from "styled-components/native";
 import { Dimensions } from "react-native";
 
-const { width } = Dimensions.get("window");
+const { width, height } = Dimensions.get("window");
 export const InputContainer = styled.View`
+  margin-bottom: 10px;
 `;
 export const InputLabel = styled.Text`
   font-size: 20px;
@@ -11,13 +12,11 @@ export const InputLabel = styled.Text`
 `;
 
 export const InputField = styled.View<{ borderColor: string }>`
-  height: 80px;
+  height: ${height*0.085}px;
   width: ${width * 0.92}px;
   background-color: #eee;
   border-radius: 10px;
   flex-direction: row;
-  margin-bottom: 15px;
-  margin-top: 15px;
   align-items: center;
   justify-content: center;
   border: 1px ${props => props.borderColor};
